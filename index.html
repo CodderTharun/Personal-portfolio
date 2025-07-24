@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="sheets3.css">
+</head>
+<body>
+    <header>
+        <h1><h1 id="head">Building the Web, One Pixel at a Time</h1>
+    </h1>
+        <p class="tagline"><b>THINKING OUT OF THE BOX</b></p>
+    </header>
+    <div class="profile-header">
+        <img src="mypic.jpeg.jpg" alt="tharun" class="profile-image">
+        <div class="profile-info">
+            <h1 id="name">Tharun B</h1>
+            <p class="profile-tagline">Aspiring Web Developer | Designer | Creator</p>
+        </div>
+    </div>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm Tharun, a curious and creative learner who enjoys building things and understanding how they work. I believe in growing through challenges and staying consistent with what I love. This space is a reflection of my journey—where I try, learn, improve, and share what I'm passionate about.
+                <b>clik here for more</b>
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3><i>TIC TAC TOE</i><h3>
+                    <p>&#128640<b>WANNA PLAY GAME CLICK ME!!</b>&#128640</p>
+                </div>
+                <div class="project">
+                    <h3><i>DIGITAL CALCULATOR</i></h3>
+                    <p><b>&#129300IT'S TIME TO CALCULATE!!&#129300</b></div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C</li>
+                <li>Python</li>
+                <li>C++</li>
+
+                
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.05L8 8.414 0 4.05V4z"/>
+                  <path d="M0 4.697v7.104l5.803-3.877L0 4.697zM6.761 8.83l-6.574 4.389A2 2 0 0 0 2 14h12a2 2 0 0 0 1.813-1.121l-6.574-4.39L8 9.586l-1.239-.757z"/>
+                </svg>
+                <a href="mailto:tharunmbc@gmail.com" target="_blank">tharunmbc@gmail.com</a>
+                <p>
+                    <p>🔗 <a href="https://www.linkedin.com/in/tharun-b-25594b304/"" target="_blank">LinkedIn</a></p>
+ 
+              </p>
+              
+        </section>
+    </main>
+    <script>
+      document.getElementById('about').addEventListener('click', function() {
+        window.location.href = 'about.html';
+      });
+      document.getElementById('about').style.cursor = 'pointer';
+      
+      const tttDiv = document.querySelector('.project-list .project:nth-child(1)');
+      if (tttDiv) {
+        tttDiv.addEventListener('click', function() {
+          window.location.href = 'tictactoe.html';
+        });
+        tttDiv.style.cursor = 'pointer';
+      }
+     
+      const calcDiv = document.querySelector('.project-list .project:nth-child(2)');
+      if (calcDiv) {
+        calcDiv.addEventListener('click', function() {
+          window.location.href = 'calculator.html';
+        });
+        calcDiv.style.cursor = 'pointer';
+      }
+      
+      const skillsSection = document.getElementById('skills');
+      if (skillsSection) {
+        skillsSection.addEventListener('click', function() {
+          window.location.href = 'skills.html';
+        });
+        skillsSection.style.cursor = 'pointer';
+      }
+    </script>
+</body>
+</html>
